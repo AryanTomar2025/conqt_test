@@ -15,7 +15,23 @@ const ItemSupplierData = () => {
   });
 
   const [submittedData, setSubmittedData] = useState(null);
-  
+  /**
+   * if we need dynamic data we can simply fetch api in useEffect hook  like(i did not see the lower part of word file , hence i simple take static data  initiallu  )  ;
+   * 
+   * useEffect(()=>{
+   * const fetchData= async()=>{
+   * const fetcheddata = fetch("api url")
+   * const  data = json.fetchedData;
+   * if(data.length >0 ? 
+   * setData(data)  // we can take a useState Variable  data and setData  after then we can simple  show on our ui
+   * )
+   * 
+   * }
+   * 
+   * },[])
+   * 
+   * 
+   */
 
   const handleChange = (e) => {
     const { name, value } = e.target;
